@@ -1,69 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>W3.CSS Template</title>
+<title>KrisKo</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
+.text {
+	text-transform: uppercase;
+	background: linear-gradient(to right, #0040ff 30%,#33cc33 70%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font: {
+		size: 20vw;
+		family: $font;
+	};
+}
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
 </style>
 </head>
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+  <div class="w3-bar w3-white w3-card w3-left-align">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">About Us</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Our Clients  </a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Our Services</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Service Request </a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Contact Us </a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Login</a>
+   
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-text-grey">About Us</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-text-grey">Our Clients  </a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-text-grey">Our Services</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-text-grey">Service Request </a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-text-grey">Contact Us </a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-text-grey">Login</a>
   </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-   <a href="#" class="w3-bar-item w3-button w3-padding-large">About Us</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Our Clients  </a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Our Services</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Service Request </a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Contact Us </a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Login</a>
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium ">
+   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-text-grey">About Us</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-text-grey">Our Clients  </a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-text-grey">Our Services</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-text-grey">Service Request </a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-text-grey">Contact Us </a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-text-grey">Login</a>
   </div>
 </div>
 
 <!-- Header -->
 <header class="w3-container w3-white w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo w3-text-blue"><b>KrisKo Software Pvt. Ltd.</b></h1>
-  <p class="w3-margin w3-large w3-text-green">make smarter business decisions</p>
+  <h1 class="w3-margin w3-jumbo w3-text-blue text"><b>KrisKo Software Pvt. Ltd.</b></h1>
+  <p class="w3-margin w3-xlarge w3-text-black">Make smarter business decisions.</p>
   
   
-  <button class="w3-button  w3-text-blue w3-padding-large w3-large w3-border w3-margin-top">Contact sales</button>
+  <button class="w3-button  w3-text-blue w3-padding-large w3-medium w3-border w3-margin-top">Contact sales</button>
 </header>
 
 <!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+  <div class="w3-content ">
     <div class="w3-twothird">
-      <h1>Why KKS</h1>
-      <h5 class="w3-padding-32">At KKS (KrisKo Software), we develop custom enterprise software solutions
+      <h1><b>Why KKS</b></h1>
+      <h5 class="w3-padding-32 w3-text-grey">At KKS (KrisKo Software), we develop custom enterprise software solutions
 leveraging cutting edge software technologies,
 database technologies and internet technologies.</h5>
 
-      <p class="w3-text-grey"></p>
+     
     </div>
 
     <div class="w3-third w3-center">
-      <i class="fas fa-server" style="font-size:218px;color:green"></i>
+     
+      <img src="https://invozone.com/static/2547f62afb7d8b1de41b4bb66ae4a758/46b7b/enterprise-development-trends.png" class="w3-round" alt="kks" style="width:100%;max-width:400px">
     </div>
   </div>
 </div>
@@ -71,9 +101,11 @@ database technologies and internet technologies.</h5>
 <!-- Second Grid -->
 <div class="w3-row-padding w3-white w3-padding-64 w3-container">
   <div class="w3-row">
-    <div class="w3-half w3-center">
-       <h1>Choose from our cutting-edge softwares</h1>
-       <button class="w3-btn w3-blue w3-round-large">Get started</button>
+    <div class="w3-half w3-center  ">
+       <h1 class="w3-xxlarge "><b>Our cutting-edge softwares</b></h1>
+       <h5 class="w3-text-grey">Solve your business problems with our <b style="color:#ff9900;">industry solutions.</b></p></h5>
+       <br>  
+       <button class="w3-btn w3-blue w3-round-large">Request a demo</button>
     </div>
 
     <div class="w3-half">
@@ -107,17 +139,15 @@ database technologies and internet technologies.</h5>
 </div>
 
 <div class="w3-container w3-black w3-center  w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">An ISO 9001:2015 certified company</h1>
+    <h1 class="w3-margin w3-padding-64 w3-xxlarge"><b>An ISO 9001:2015 certified company</b></h1>
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-<p>Reach us for any query & Information</p>
-  <div class="w3-xlarge w3-padding-32">
-    
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
- </div>
+<footer class="w3-container w3-padding-64 w3-center w3-opacity"> 
+  <p><b><a href="default.asp" target="_blank">Reach us for any query & Information</a></b></p>
+
+
+ 
  <p>© KrisKo Software Pvt. Ltd.</p>
 </footer>
 
